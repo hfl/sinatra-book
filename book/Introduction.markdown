@@ -1,4 +1,4 @@
-Introduction
+概述
 =============
 
 What is Sinatra?

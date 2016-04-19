@@ -1,9 +1,9 @@
-Sinatra Book
+Sinatra 宝典
 ============
 
 A cookbook full of excellent tutorials and recipes for developing Sinatra web applications.
 
-How to build the Book
+如何编译此书
 ---------------------
 
 Before you can translate the book into various formats you need to install the dependencies.
@@ -23,7 +23,7 @@ You can run the built-in book sinatra app to view it in your browser too:
 
 Then visit: http://localhost:9292/
 
-How to contribute
+如何援助
 -----------------
 
 Want to help contribute recipes or tutorials into the [Sinatra
@@ -49,7 +49,7 @@ Join us on IRC (#sinatra at irc.freenode.org) if you need help with anything.
 [forking]: http://help.github.com/forking/
 [pull-requests]: http://help.github.com/pull-requests/
 
-License
+授权协议
 -----------------
 
 The MIT License (MIT)
