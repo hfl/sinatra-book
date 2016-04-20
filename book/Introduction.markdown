@@ -3,7 +3,7 @@
 
 Sinatra 是什么？
 ----------------
-Sinatra 是一种基于Ruby语言能够快速创建网络程序的领域定义语言(Domain Specific Language -- DSL)。
+Sinatra 是一种基于Ruby语言能够快速创建网络程序的领域定义语言(Domain Specific Language，简称DSL)。
 
 It keeps a minimal feature set, leaving the developer to use the
 tools that best suit them and their application.

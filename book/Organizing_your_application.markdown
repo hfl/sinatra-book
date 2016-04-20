@@ -1,4 +1,4 @@
-Organizing your application
+组织您的程序
 ===========================
 
     "You don't know how paralyzing that is, that stare of a blank canvas is"
@@ -11,7 +11,7 @@ specific situations, but you will need to experiment to determine the best
 structure of your code.  Don't be afraid to experiment.
 
 
-## A Single File Application
+## 单一文件应用
 
 Obviously the file system structure is easy for this one.
 
@@ -20,14 +20,14 @@ use inline templates, multiple classes (this isn't Java, multiple classes will
 live happily next to each other in the same file)
 
 
-## A Large Site
+## 大型站点
 
 This one is trickier.  My advice is to look to Rails for advice.  They have a
 well structured set of directories to hold many of the components that make up
 a larger application.  Remember that this file structure is just a suggestion.
 
 ```
-|- config.ru            # A rackup file. Load server.rb, and 
+|- config.ru            # A rackup file. Load server.rb, and
 |- server.rb            # Loads all files, is the base class
 |- app/
 \--- routes/
@@ -50,7 +50,7 @@ class Server < Sinatra::Base
   end
 end
 
-# Load all route files
+ # Load all route files
 Dir[File.dirname(__FILE___) + "/app/routes/**"].each do |route|
   require route
 end
@@ -59,7 +59,7 @@ end
 And the route files look something like:
 
 ```ruby
-# users.rb
+ # users.rb
 class Server < Sinatra::Base
   get '/users/:id' do
     erb :"users/show"
@@ -68,5 +68,3 @@ class Server < Sinatra::Base
   # more routes...
 end
 ```
-
-

@@ -1,17 +1,13 @@
 初识 Sinatra
 =======================
 
-## It's Witchcraft
+## 太魔性了
 
-You saw in the introduction how to install Sinatra, its dependencies, and
-write a small "hello world" application. In this chapter you will get a
-whirlwind tour of the framework and familiarize yourself with its features.
+您在概述一章里已经知道了如何安装 Sinatra、他的依赖程序，然后还写了一个 "hello world" 程序。在这章里您将进入框架旋风之旅来互相熟悉一下。
 
-## Routing
+## 路由
 
-Sinatra is super flexible when it comes to routing, which is essentially an
-HTTP method and a regular expression to match the requested URL. The four basic
-HTTP request methods will get you a long ways:
+Sinatra 在路由方面表现的超级有弹性，他使用 HTTP 方法和正则表达式来匹配请求的 URL。最基本的 HTTP 请求方法有：
 
 *   GET
 *   POST
@@ -19,11 +15,9 @@ HTTP request methods will get you a long ways:
 *   PUT
 *   DELETE
 
-Routes are the backbone of your application, they're like a guide-map to how
-users will navigate the actions you define for your application.
+路由就是程序的主干，他们就像导航图来协调用户和程序之间的互动。
 
-They also enable to you create [RESTful web services][restful-web-services], in
-a very obvious manner. Here's an example of how one-such service might look:
+您很容易就可以构建起 [RESTful 网络服务][restful-web-services]。下面就一个例子：
 
 ```ruby
 get '/dogs' do
@@ -64,7 +58,7 @@ Take a more in-depth look at [Sinatra's routes][routes], and see for yourself.
 [restful-web-services]: http://en.wikipedia.org/wiki/Representational_State_Transfer#RESTful_web_services
 [RFC 5789]: http://www.rfc-base.org/rfc-5789.html
 
-## Filters
+## 过滤器
 
 Sinatra offers a way for you to hook into the request chain of your
 application via [Filters][filters].
@@ -73,7 +67,7 @@ Filters define two methods available, `before` and `after` which both accept a
 block to yield corresponding the request and optionally take a URL pattern to
 match to the request.
 
-### before
+### 之前（before）
 
 The `before` method will let you pass a block to be evaluated **before** _each_
 and _every_ route gets processed.
@@ -92,7 +86,7 @@ end
 In this example, we've set up a `before` filter to connect using a contrived
 `MyStore` module.
 
-### after
+### 之后（after）
 
 The `after` method lets you pass a block to be evaluated **after** _each_ and
 _every_ route gets processed.
@@ -106,7 +100,7 @@ end
 As you can see from this example, we're asking the `MyStore` module to
 disconnect after the request has been processed.
 
-### Pattern Matching
+### 模式匹配
 
 Filters optionally take a pattern to be matched against the requested URI
 during processing. Here's a quick example you could use to run a contrived
@@ -162,7 +156,7 @@ in via the request object, or generated in your route pattern.
 [passing]: http://www.sinatrarb.com/intro#Passing
 
 
-## Templates
+## 模板
 
 Sinatra is built upon an incredibly powerful templating engine, [Tilt][tilt].
 Which, is designed to be a "thin interface" for frameworks that want to support
@@ -234,7 +228,7 @@ For more specific details on how Sinatra handles templates, check the [README][t
 [named]: http://www.sinatrarb.com/intro#Named%20Templates
 [templates]: http://www.sinatrarb.com/intro#Views%20/%20Templates
 
-## Helpers
+## 帮助方法
 
 Helpers are a great way to provide reusable code snippets in your application.
 
