@@ -1,4 +1,4 @@
-Development Techniques
+开发技巧
 ======================
 
 Automatic Code Reloading
@@ -34,4 +34,3 @@ And run it by calling `shotgun` without arguments.
 
 The `shotgun` executable takes arguments similar to those of the `rackup`
 command, run `shotgun --help` for more information.
-

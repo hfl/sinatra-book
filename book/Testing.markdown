@@ -1,7 +1,7 @@
-Testing
+测试
 =======
 
-Using Rack::Test
+使用 Rack::Test
 ----------------
 
 Testing is an integral part of software development. In this section we will
@@ -23,7 +23,7 @@ testing.
 Imagine you have an application like this:
 
 ```ruby
-# myapp.rb
+ # myapp.rb
 require 'sinatra'
 
 get '/' do
@@ -39,7 +39,7 @@ You have to define an `app` method pointing to your application class (which is
 `Sinatra::Application` per default):
 
 ```ruby
-begin 
+begin
   # try to use require_relative first
   # this only works for 1.9
   require_relative 'my-app.rb'
@@ -58,7 +58,7 @@ class MyAppTest < Test::Unit::TestCase
   def app
     Sinatra::Application
   end
-  
+
   def test_my_default
     get '/'
     assert last_response.ok?
@@ -72,7 +72,7 @@ class MyAppTest < Test::Unit::TestCase
 end
 ```
 
-### Modifying `env`
+### 修改 `env`
 
 While parameters can be send via the second argument of a get/post/put/delete
 call (see the post example above), the env hash (and thereby the HTTP headers)
@@ -101,7 +101,7 @@ Use `set_cookie` for setting and removing cookies, and the access them in your r
 ```ruby
 response.set_cookie 'foo=bar'
 get '/'
-assert_equal 'Hello bar!', last_response.body 
+assert_equal 'Hello bar!', last_response.body
 ```
 
 ### Asserting Expectations About The Response
@@ -171,5 +171,3 @@ end
 
 Now all `TestCase` subclasses will automatically have `Rack::Test`
 available to them.
-
-

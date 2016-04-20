@@ -1,4 +1,4 @@
-Middleware
+中间件
 ==========
 
 Sinatra rides on [Rack][rack], a minimal standard interface for Ruby web
@@ -40,4 +40,3 @@ don’t have to use them explicitly.
 
 [rack]: http://rack.rubyforge.org/
 [rack_builder]: http://rack.rubyforge.org/doc/classes/Rack/Builder.html
-

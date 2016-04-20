@@ -1,4 +1,4 @@
-Contributing
+贡献力量
 ============
 
 ## There are plenty of ways to [contribute to Sinatra][contributing].
@@ -22,4 +22,3 @@ Join us on IRC (#sinatra at irc.freenode.org) if you need help with anything.
 [wiki]: http://github.com/sinatra/sinatra-book/wiki/How-to-contribute
 [forking]: http://help.github.com/forking/
 [pull-requests]: http://help.github.com/pull-requests/
-
