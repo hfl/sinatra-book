@@ -1,4 +1,4 @@
-Getting to know Sinatra
+初识 Sinatra
 =======================
 
 ## It's Witchcraft
@@ -249,5 +249,3 @@ get '/:name' do
   bar(params[:name])
 end
 ```
-
-

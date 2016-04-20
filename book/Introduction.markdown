@@ -1,10 +1,9 @@
 概述
 =============
 
-What is Sinatra?
+Sinatra 是什么？
 ----------------
-Sinatra is a Domain Specific Language (DSL) for quickly creating
-web-applications in Ruby.
+Sinatra 是一种基于Ruby语言能够快速创建网络程序的领域定义语言(Domain Specific Language -- DSL)。
 
 It keeps a minimal feature set, leaving the developer to use the
 tools that best suit them and their application.
@@ -28,7 +27,7 @@ directly to relevant Ruby code and returns its output in response. It does
 enable you, however, to write clean, properly organized applications:
 separating _views_ from application code, for instance.
 
-Installation
+安装
 ------------
 The simplest way to install Sinatra is through Rubygems:
 
@@ -36,7 +35,7 @@ The simplest way to install Sinatra is through Rubygems:
 $ gem install sinatra
 ```
 
-### Dependencies
+### 依赖程序
 
 Sinatra depends on the _Rack_ gem (<http://rack.rubyforge.org>).
 
@@ -50,7 +49,7 @@ with Ruby, or installing HAML as your first template language.
 $ gem install haml
 ```
 
-### Living on the Edge
+### 使用开发版本
 
 The _edge_ version of Sinatra lives in its Git repository, available at
 **<http://github.com/sinatra/sinatra/tree/master>**.
@@ -79,7 +78,7 @@ So now we can install our bundle:
 $ bundle install
 ```
 
-Hello World Application
+Hello World 程序
 -----------------------
 
 Sinatra is installed, how about making your first application?
@@ -87,7 +86,7 @@ Sinatra is installed, how about making your first application?
 ```ruby
 require 'rubygems'
 
-# If you're using bundler, you will need to add this
+  # If you're using bundler, you will need to add this
 require 'bundler/setup'
 
 require 'sinatra'
@@ -105,10 +104,10 @@ request to a URL evaluates some Ruby code and returns some text in response.
 Whatever the block returns is sent back to the browser.
 
 
-Real World Applications in Sinatra
+现实世界中的 Sinatra
 ----------------------------------
 
-### Github Services
+### Github 服务
 
 Git hosting provider Github uses Sinatra for post-receive hooks, calling user
 specified services/URLs, whenever someone pushes to their repository:
@@ -121,7 +120,7 @@ Check out a full list of Sinatra apps [in the wild][in-the-wild].
 
 [in-the-wild]: http://www.sinatrarb.com/wild.html
 
-About this book
+关于此书
 ---------------
 This book will assume you have a basic knowledge of the Ruby scripting language
 and a working Ruby interpreter.
@@ -131,7 +130,7 @@ For more information about the Ruby language visit the following links:
 * [ruby-lang](http://www.ruby-lang.org)
 * [ruby-lang / documentation](http://www.ruby-lang.org/en/documentation/)
 
-Need Help?
+需要帮助吗？
 ----------
 
 The Sinatra club is small, but super-friendly.  Join us on IRC at

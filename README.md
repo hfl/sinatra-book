@@ -1,33 +1,32 @@
 Sinatra 宝典
 ============
 
-A cookbook full of excellent tutorials and recipes for developing Sinatra web applications.
+这是一本针对 Sinatra 开发者而写的具有新手指南和各种秘籍的宝典。
 
 如何编译此书
 ---------------------
 
-Before you can translate the book into various formats you need to install the dependencies.
+在您开始将此书转换成各种格式之前需要安装依赖的软件。
 
     gem install bundler
     bundle install
 
-In the root directory, launch the following Rake task:
+然后在根目录里，执行下面的 Rake 任务：
 
     bundle exec rake book:build
 
-This will build a PDF version of the book in the output folder
+将会在 output 文件夹内生成一本 PDF 版本的图书。
 
-You can run the built-in book sinatra app to view it in your browser too:
+您也可以运行内建的图书 sinatra 应用程序来浏览：
 
     rackup
 
-Then visit: http://localhost:9292/
+然后访问：http://localhost:9292/
 
-如何援助
+如何参与贡献
 -----------------
 
-Want to help contribute recipes or tutorials into the [Sinatra
-Book][sinatra-book]?
+想要为 [Sinatra Book][sinatra-book] 的秘籍或者新手指南贡献代码吗？
 
 Check out the [Sinatra Recipes][sinatra-recipes] project for all of
 the recent additions from the community.
